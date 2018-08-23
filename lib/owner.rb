@@ -7,11 +7,11 @@ class Owner
   end
 
   def self.count
-    Owner.all.count
+    Owner.all.size
   end
 
   def self.reset_all
-    Owner.all.delete
+    Owner.all.clear
   end
 
 end
