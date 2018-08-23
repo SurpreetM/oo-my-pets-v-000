@@ -2,9 +2,10 @@ class Owner
 
   @@all = []
 
+  attr_writer :species
+
   def initialize(species)
     @species = species
-
   end
 
   def self.all
@@ -17,6 +18,10 @@ class Owner
 
   def self.reset_all
     Owner.all.clear
+  end
+
+  def say_species
+    "I am a #{species}."
   end
 
 end
