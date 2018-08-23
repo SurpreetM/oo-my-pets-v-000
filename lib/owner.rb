@@ -1,13 +1,17 @@
 class Owner
 
-@@all = []
+  @@all = []
 
-def self.all
-  @@all
-end
+  def self.all
+    @@all
+  end
 
-def self.count
-  Owner.all.count
-end
+  def self.count
+    Owner.all.count
+  end
+
+  def self.reset_all
+    Owner.all.delete
+  end
 
 end
